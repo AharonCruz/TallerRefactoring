@@ -6,8 +6,6 @@ public class InformacionAdicionalProfesor {
     private double BonoFijo;
     
     public double calcularSueldo(){
-        double sueldo=0;
-        sueldo= aniosdeTrabajo*600 + BonoFijo;
-        return sueldo;
+        return aniosdeTrabajo*600 + BonoFijo;
     }  
 }
