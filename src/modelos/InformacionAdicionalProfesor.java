@@ -1,8 +1,13 @@
 package modelos;
 
 public class InformacionAdicionalProfesor {
-    public int añosdeTrabajo;
-    public String facultad;
-    public double BonoFijo;
+    private int aniosdeTrabajo;
+    private String facultad;
+    private double BonoFijo;
     
+    public double calcularSueldo(){
+        double sueldo=0;
+        sueldo= aniosdeTrabajo*600 + BonoFijo;
+        return sueldo;
+    }  
 }
